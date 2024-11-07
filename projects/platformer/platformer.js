@@ -67,3 +67,5 @@ $(function () {
 
   registerSetup(setup);
 });
+
+function = createPlatform(500, 300, 200, 20)
