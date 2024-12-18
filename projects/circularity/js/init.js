@@ -90,3 +90,13 @@ if((typeof process !== 'undefined') &&
     // here, export any references you need for tests //
     module.exports = init;
 }
+
+var circle; 
+
+var circles = [];
+
+circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+physikz.addRandomVelocity(circle, canvas);
+view.addChild(circle);
+circles.push(circle);
+
