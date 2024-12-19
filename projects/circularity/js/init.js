@@ -93,10 +93,50 @@ if((typeof process !== 'undefined') &&
 
 var circle; 
 
-var circles = [];
+var circles = [100];
 
 circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 physikz.addRandomVelocity(circle, canvas);
 view.addChild(circle);
 circles.push(circle);
 
+function update() {
+    
+  
+    physikz.updatePosition(/* Your Bracket Notation HERE */);
+    physikz.updatePosition(/* Your Bracket Notation HERE */);
+    physikz.updatePosition(/* Your Bracket Notation HERE */);
+    physikz.updatePosition(/* Your Bracket Notation HERE */);
+    physikz.updatePosition(/* Your Bracket Notation HERE */);
+  }
+
+  game.checkCirclePosition(/* Your Bracket Notation HERE */);
+game.checkCirclePosition(/* Your Bracket Notation HERE */);
+game.checkCirclePosition(/* Your Bracket Notation HERE */);
+game.checkCirclePosition(/* Your Bracket Notation HERE */);
+game.checkCirclePosition(/* Your Bracket Notation HERE */);
+
+game.checkCirclePosition = function (circle) {
+    // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
+    if (circle.x > canvas.width) {
+      circle.x = 0;
+    }
+  
+    // TODO 7 : YOUR CODE STARTS HERE //////////////////////
+  
+    /* Your conditional statements HERE */
+  
+    // YOUR TODO 7 CODE ENDS HERE //////////////////////////
+  };
+  var rightEdge = circle.x + circle.radius;
+  for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
+    // do something
+  }
+  var loopsCompleted = 0;
+while (loopsCompleted < 10) {
+  // do something
+  loopsCompleted++;
+}
+for (var i = 0; i < myArray.length; i++) {
+    // code to repeat using i
+  }
